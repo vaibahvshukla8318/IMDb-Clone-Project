@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Clone</title>
+    <meta name="description" content="A clone website of IMDb for movie enthusiasts.">
+    <meta name="keywords" content="IMDb, movies, film, clone">
+    <meta name="author" content="Vaibhav Shukla">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav>
+            <h2 data-text="IMDb">IMDb</h2>
+            <a id="home" href="index.html">Home</a>
+            <a href="fav.html" id="fav"><span>Favorites</span></a>
+            <!-- Search container -->
+            <div class="search-container">
+                <div class="search-element">
+                    <input type="text" class="form-control" placeholder="Search Movie Title" id="movie-search-box">
+                    <div class="search-list" id="search-list">
+                        <!-- list here -->
+                    </div>
+                </div>
+            </div>
+            <!-- End of search container -->
+        </nav>
+        <!-- End of navigation -->
+
+        <!-- Result container -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!-- movie information JavaScript-->
+                </div>
+                <!-- <button id="addToFav">Add to Favorites</button> -->
+            </div>
+        </div>
+        <!-- End of result container -->
+
+         <!-- Footer -->
+         <footer>
+            <p>Created by <a href="https://github.com/vaibhavshukla8318/imdb-clone-project" target="_blank">Vaibhav Shukla</a> | Powered by <a href="https://www.omdbapi.com/" target="_blank">OMDb API</a></p>
+        </footer>
+        <!-- End of footer -->
+    </div>
+    <!-- End of wrapper -->
+
+
+     <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b45c6d8a14.js" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

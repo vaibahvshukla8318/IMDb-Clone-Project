@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex; /* Use flexbox to align navigation items */
+    margin: 20px;
+    justify-content: center; /* Center the navigation items horizontally */
+  }
+  
+  /* Container */
+  .container {
+    display: flex; /* Use flexbox for the container */
+    flex-wrap: wrap; /* Wrap the container items */
+    gap: 40px; /* Add a 40px gap between container items */
+  }
+  
+  /* Home link in navigation */
+  #home span {
+    color: #333; /* Set the color of the text to #333 */
+  }
+  
+  /* Navigation link */
+  nav a {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    display: flex;
+  }
+  
+  nav a:before,
+  nav a:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #f00;
+    transition: 0.5s;
+  }
+  
+  nav a:hover:before {
+    inset: -3px;
+  }
+  
+  nav a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+  }
+  
+  nav a span {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(29, 28, 28);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: 1px solid #4c4e55;
+  }
+  
+  /* Result Container */
+  .result-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Result Grid */
+  .result-grid {
+    flex-basis: 100%;
+    max-width: 400px;
+    background-color: rgb(42, 40, 40);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+  }
+  
+  /* Movie Poster */
+  .movie-poster img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+  }
+  
+  /* Movie Info */
+  .movie-info {
+    padding-top: 10px;
+    color: #fff;
+  }
+  
+  /* Movie Title */
+  .movie-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  /* Movie Miscellaneous Info */
+  .movie-misc-info {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .movie-misc-info li {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  /* Genre and Language */
+  .movie-info .genre,
+  .movie-info .language {
+    margin-bottom: 5px;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .result-grid {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .result-grid {
+      flex-basis: calc(33.33% - 20px);
+    }
+  }
+  
