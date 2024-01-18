@@ -14,6 +14,7 @@ async function loadMovies(searchTerm) {
   const URL = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=699e79e2`; // Base URL
   const res = await fetch(URL); // Fetch data from server
   const data = await res.json(); // Arrange data in readable format (JSON)
+  console.log(data);
 
   // Check if everything is okay
   if (data.Response === 'True') {
